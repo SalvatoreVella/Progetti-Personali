@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-image: url(./pen.jpeg);
+    background-size: auto 53rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-flex {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin: 1rem auto;
+    padding-left: 13rem;
+}
+
+.btn {
+display: flex;
+align-items: center;
+padding: .7rem 1.5rem;
+border-radius: 4px;
+border: none;
+font-weight: bold;
+transition: all 0.15s;
+margin-right: 4rem;
+cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: rgb(192, 192, 192);
+    color: darkred;
+    transform: scale(0.95);
+    transition: all 0s;
+}
+
+.note-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 12rem;
+    height: 13rem;
+    right: 1rem;
+    padding: 2rem;
+    background-color: rgba(199, 199, 199, 0.381);
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.135);
+}
+
+.note {
+    background-color: rgb(239, 239, 239);
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.135);
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(231, 241, 253);
+}
+
+.delete-btn, .edit-btn {
+    padding: 6px 9px;
+    margin: 0 0 0 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.note-txt {
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+.note-txt:hover, .note-txt:focus-visible {
+    outline: none;
+}
