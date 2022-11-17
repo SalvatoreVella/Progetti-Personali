@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: rgb(35, 35, 35);
+    font-family: 'Sono', sans-serif;
+    height: 100vh;
+    background-image: url(./pexels-eberhard-grossgasteiger-572897.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    text-align: center;
+}
+
+.big-text {
+    font-size: 5rem;
+    margin: 0 2rem;
+}
