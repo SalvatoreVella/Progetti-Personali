@@ -70,7 +70,6 @@ function setHandlers() {
     adBtn.addEventListener("click", () => {
         createNote(state.proto);
         saveNotes();
-        loadNotes();
         renderNotes();
     })
 
