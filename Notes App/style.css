@@ -118,21 +118,15 @@ cursor: pointer;
     font-weight: bold;
 }
 
-.dragger {
-    flex-grow: 1;
-    min-height: 100%;
-    text-align: center;
+img.dragger {
     cursor: grab;
+    z-index: 0;
+    min-height: 16px;
+    max-height: 16px;
+    padding: 0 3.4rem;
+    margin: auto;
 }
 
 .dragger:active {
     cursor: grabbing;
-}
-
-img.dragger {
-    width: 22px;
-    min-height: 16px;
-    padding-top: 4px;
-    margin: auto;
-    aspect-ratio: 1 / 1;
 }

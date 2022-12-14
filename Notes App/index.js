@@ -49,9 +49,7 @@ function renderNotes() {
     let html = state.notes.map((note) =>
         `<div class="note" id=${note.id} ${note.isPositionAbsolute ? `style="position: absolute; top: ${note.positionTop}; left: ${note.positionLeft}"` : ""}>
         <div class="buttons">
-        <div class="dragger" data-id=${note.id}>
         <img class="dragger" data-id=${note.id} src="./drag.png"></img>
-        </div>
             <button class="btn delete-btn" data-id=${note.id}>
             <img class="cursor delete-btn" data-id=${note.id} src="./trash.svg"></img>
             </button>
