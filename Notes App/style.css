@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
 
 body {
-    background-image: url(./pen.jpeg);
-    background-size: auto 53rem;
+    min-height: 90vh;
+    overflow-x: hidden;
+    background-image: url(./Svg-Background.svg);
+    background-size: auto 100vw;
+    background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+    background-repeat: repeat;
+    font-family: 'Roboto slab', serif;
+}
+
+@media (max-width:900px) {
+    body {
+        background-size: 400% auto;
+    }
 }
 
 .title-flex {
@@ -14,9 +23,10 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: white;
     margin: 1rem auto;
-    padding-left: 13rem;
+    font-size: 3rem;
 }
 
 .btn {
@@ -27,12 +37,9 @@ border-radius: 4px;
 border: none;
 font-weight: bold;
 transition: all 0.15s;
-margin-right: 4rem;
+margin-right: 6rem;
+margin-left: auto;
 cursor: pointer;
-}
-
-.cursor {
-    cursor: pointer;
 }
 
 .btn:hover {
@@ -51,11 +58,12 @@ cursor: pointer;
     position: fixed;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 12rem;
-    height: 13rem;
+    align-items: center;
+    width: 15rem;
+    height: 14rem;
     right: 1rem;
     padding: 2rem;
+    margin-top: 1rem;
     background-color: rgba(199, 199, 199, 0.381);
     border-radius: 4px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.135);
@@ -81,6 +89,13 @@ cursor: pointer;
     margin: 0 0 0 6px;
     background-color: transparent;
     cursor: pointer;
+    font-size: 16px;
+}
+
+.cursor {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 
 .note-txt {
@@ -93,4 +108,31 @@ cursor: pointer;
 
 .note-txt:hover, .note-txt:focus-visible {
     outline: none;
+}
+
+.text-warn {
+    position: fixed;
+    top: 27rem;
+    right: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.dragger {
+    flex-grow: 1;
+    min-height: 100%;
+    text-align: center;
+    cursor: grab;
+}
+
+.dragger:active {
+    cursor: grabbing;
+}
+
+img.dragger {
+    width: 22px;
+    min-height: 16px;
+    padding-top: 4px;
+    margin: auto;
+    aspect-ratio: 1 / 1;
 }
