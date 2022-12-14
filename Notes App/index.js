@@ -31,7 +31,7 @@ function loadNotes() {
 const createNote = ({ text, positionTop, positionLeft, isPositionAbsolute, isInputDisabled }) => {
     if (state.notes.length === 0 || !state.notes[state.notes.length - 1]?.isPositionAbsolute == false) {
         const newNote = {
-            id: state.notes.length + 1,
+            id: state._notes.length + 1,
             text: text,
             positionTop: positionTop,
             positionLeft: positionLeft,
@@ -77,7 +77,6 @@ function setHandlers() {
     document.addEventListener("click", (event) => {
         function removeNote(target) {
             state.notes.splice(target, 1);
-            state._notes.splice(target, 1);
             saveNotes();
             renderNotes();
         }
